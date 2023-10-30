@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: work sans,sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 0 20px #494848;
+}
+
+.title {
+  color: #918f8f;
+  font-weight: 100;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.title img {
+  vertical-align: middle;
+  margin-bottom: 5px;
+  width: 4rem;
+}
+
+.navmenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  color: #918f8f;
+  transition: color 0.3s ease;
+}
+
+.menu li:hover {
+  color: #2799f0;
+  transition: color 0.3s ease;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #918f8f;
+}
+
+.body-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(206, 87%, 55%);
+  padding: 4rem 2rem;
+  color: #fff;
+  position: relative;
+  margin-top: 5rem;
+  clip-path: polygon(50% 100%, 100% 72%, 100% 0%, 0% 0%, 0% 72%);
+}
+
+.body-top h1 {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.body-top p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-icons li {
+  padding: 0 0.5rem;
+  list-style-type: none;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.social-icons li:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  border-radius: 50px;
+  width: 1.5rem;
+}
+
+.careers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+
+.careers h1 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.careers p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.center-text {
+  padding: 10px 0;
+}
+
+button {
+  background-color: #2799f0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7b8894;
+  transition: background-color 0.3s ease;
+}
+
+.follow img {
+  width: 18px;
+  padding-right: 5px;
+  vertical-align: middle;
+  filter: invert(100%);
+}
+
+.blog-page {
+  padding-bottom: 3rem;
+  background-color: #f5f5f5;
+}
+
+.blog-header {
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.subheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.subheading {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.post-count {
+  color: #918f8f;
+}
+
+.blog-post {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  padding: 0 1rem;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.each-post {
+  border: none;
+  box-shadow: 0 0 20px #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  animation: fadeIn 1s;
+  background-color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.each-post:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.each-post h2 {
+  font-size: 1rem;
+  padding-bottom: 0.2rem;
+  line-height: 1.4rem;
+}
+
+.each-post p {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
+.author-info {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.author-info img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50px;
+}
+
+.author-info p {
+  padding-left: 7px;
+}
+
+.date {
+  color: #918f8f;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .blog-page {
+    padding: 1rem 3rem;
+  }
+
+
+  .subheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+  }
+
+  .blog-post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 3rem;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: work sans,sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 0 20px #494848;
+  }
+  
+  .title {
+    color: #918f8f;
+    font-weight: 100;
+    font-size: 2rem;
+  }
+  
+  .title img {
+    vertical-align: middle;
+    margin-bottom: 5px;
+  }
+  
+  .navmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-right: 30px;  
+  }
+  
+  .menu li {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: #918f8f;
+    transition: color 0.3s ease;
+  }
+  
+  .menu li:hover {
+    color: #2799f0;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #918f8f;
+  }
+  
+  .body-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2799f0;
+    padding: 8rem 5rem;
+    color: #fff;
+    position: relative;
+    margin-top: 5rem;
+    clip-path: polygon(50% 100%, 100% 72%, 100% 0%, 0% 0%, 0% 72%);
+  }
+  
+  .body-top h1 {
+    font-size: 2rem;
+    padding-bottom: 1.8rem;
+  }
+  
+  .body-top p {
+    font-size: 1rem;
+    width: 52%;
+    line-height: 1.5rem;
+    padding-bottom: 1.8rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .social-icons li {
+    padding: 0 0.5rem;
+    list-style-type: none;
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .social-icons li:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img {
+    border-radius: 50px;
+    width: 2.5rem;
+  }
+  
+  .careers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 5rem;
+  }
+  
+  .careers h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  
+  .center-text {
+    padding: 10px 0;
+  }
+  
+  button {
+    background-color: #2799f0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #7b8894;
+    transition: background-color 0.3s ease;
+  }
+  
+  .follow img {
+    width: 20px;
+    padding-right: 5px;
+    vertical-align: middle;
+    filter: invert(100%);
+  }
+  
+  .blog-page {
+    padding-bottom: 3rem;
+  }
+  
+  .blog-header {
+    font-size: 1.8rem;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  
+  .subheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 15rem;
+  }
+  
+  .subheading {
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  
+  .post-count {
+    color: #918f8f;
+  }
+  
+  .blog-post {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 17rem;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .each-post {
+    border: none;
+    box-shadow: 0 0 20px #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .each-post:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .each-post h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .each-post p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .author-info {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .author-info img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+  }
+  
+  .author-info p {
+    padding-left: 10px;
+  }
+  
+  .date {
+    color: #918f8f;
+  }
+}
